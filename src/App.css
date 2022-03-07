@@ -5,15 +5,14 @@
     box-sizing: border-box;
 }
 
-
 .app{
     overflow: hidden;
     display: flex;
-    color: white;
-    background-image: url("https://images.unsplash.com/photo-1523961131990-5ea7c61b2107?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=774&q=80");
+    color: #faebd7;
+    background-image: url("https://images.unsplash.com/photo-1639322537138-5e513100b36e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1632&q=80");
     background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
+    background-position:50% 50%;
+    background-attachment: fixed;
 }
 
 .linkText {
@@ -21,7 +20,7 @@
 }
 
 .card{
-    border-radius: 4px;
+    border-radius: 15px;
     background: #fff;
     box-shadow: 0 6px 10px rgba(0,0,0,.08), 0 0 6px rgba(0,0,0,.05);
     transition: .3s transform cubic-bezier(.155,1.105,.295,1.12),.3s box-shadow,.3s -webkit-transform cubic-bezier(.155,1.105,.295,1.12);
@@ -32,3 +31,7 @@
     transform: scale(1.05);
     box-shadow: 0 10px 20px rgba(0,0,0,.12), 0 4px 8px rgba(0,0,0,.06);
 }
+
+/* .button {
+    background-color: #faebd7;
+} */

@@ -1,7 +1,7 @@
 import React from 'react'
-import {Switch, Route, Link} from 'react-router-dom'
+import {Switch, Route} from 'react-router-dom'
 
-import { MainNavbar, Exchanges, Homepage, Cryptocurrencies, CryptoDetails, News } from './components';
+import { MainNavbar, Homepage, Cryptocurrencies, CryptoDetails, News, SubNavbar, Footer } from './components';
 import './App.css'
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { Container } from 'react-bootstrap';
@@ -9,17 +9,16 @@ import { Container } from 'react-bootstrap';
 const App = () => {
   return (
     <div className='app'>
-            <Container fluid>
+            <Container fluid className="min-vh-100">
                 <div className="navbar">
+                    <SubNavbar/>
+                    <hr/>
                     <MainNavbar/>
                 </div>
-                <div className='main'>
+                <Container className='main'>
                     <Switch>
                       <Route exact path="/">
                         <Homepage/>  
-                      </Route>
-                      <Route exact path="/exchanges">
-                        <Exchanges/>  
                       </Route>
                       <Route exact path="/cryptocurrencies">
                         <Cryptocurrencies/>  
@@ -31,9 +30,9 @@ const App = () => {
                         <News/>  
                       </Route>
                     </Switch>
-                </div>  
-                <div className='footer'>
-                
+                </Container>  
+                <div className='footer mt-auto'>
+                  <Footer/>
                 </div>
         </Container>
 
