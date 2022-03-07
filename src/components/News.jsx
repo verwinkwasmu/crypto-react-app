@@ -1,15 +1,13 @@
 import moment from 'moment'
-import React, { useState } from 'react'
+import React from 'react'
 import { Card, Col, Nav, Row } from 'react-bootstrap'
-import { useGetCryptosQuery } from '../services/cryptoApi'
 import { useGetCryptoNewsQuery } from '../services/cryptoNewsApi'
 
 const demoImage = 'http://coinrevolution.com/wp-content/uploads/2020/06/cryptonews.jpg'
 
 const News = ({ simplified }) => {
-  const [newsCategory, setNewsCategory] = useState('Cryptocurrency')
+  const newsCategory = 'Cryptocurrency'
   const { data: cryptoNews } = useGetCryptoNewsQuery({ newsCategory, count: simplified ? 6 : 20 })
-  const { data } = useGetCryptosQuery(100)
 
   if (!cryptoNews?.value) return 'Loading...';
 

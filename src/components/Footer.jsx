@@ -1,5 +1,4 @@
 import React from 'react'
-import { Nav } from 'react-bootstrap';
 import { BsCashCoin } from 'react-icons/bs';
 import { Link } from 'react-router-dom';
 
