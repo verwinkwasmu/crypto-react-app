@@ -35,7 +35,7 @@ const Cryptocurrencies = ({ simplified }) => {
 
       )}
 
-      <Row className="justify-content-center px-5">
+      <Row className="justify-content-center">
         {cryptos?.map((currency) => (
           <Col key={currency.uuid} className="col-md-auto mx-3">
             <Nav.Link as={Link} key={currency.uuid} to={`/crypto/${currency.uuid}`} style={{ color: "black" }}>

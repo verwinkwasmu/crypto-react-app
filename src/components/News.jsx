@@ -18,7 +18,7 @@ const News = ({ simplified }) => {
       </div>
       <Row className="justify-content-center">
         {cryptoNews.value.map((news, i) => (
-          <Col key={i} className="col-md-auto mx-5">
+          <Col key={i} className="col-md-auto mx-4">
             <Card style={{ width: '30rem' }} className="mb-5">
               <Card.Body>
                 <Nav.Link href={news.url} target="_blank" rel="noreferrer" style={{ color: "black" }}>
