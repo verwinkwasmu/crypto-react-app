@@ -1,0 +1,249 @@
+{
+    "_type": "News",
+    "readLink": "https://api.cognitive.microsoft.com/api/v7/news/search?q=Cryptocurrency",
+    "queryContext": {
+        "_type": "QueryContext",
+        "originalQuery": "Cryptocurrency",
+        "adultIntent": false
+    },
+    "totalEstimatedMatches": 25,
+    "sort": [
+        {
+            "_type": "SortValue",
+            "name": "Best match",
+            "id": "relevance",
+            "isSelected": true,
+            "url": "https://api.cognitive.microsoft.com/api/v7/news/search?q=Cryptocurrency"
+        },
+        {
+            "_type": "SortValue",
+            "name": "Most recent",
+            "id": "date",
+            "isSelected": false,
+            "url": "https://api.cognitive.microsoft.com/api/v7/news/search?q=Cryptocurrency&sortby=date"
+        }
+    ],
+    "value": [
+        {
+            "_type": "NewsArticle",
+            "name": "Cryptocurrency prices mixed on Tuesday",
+            "url": "https://www.foxbusiness.com/markets/cryptocurrency-prices-mixed-march-8",
+            "image": {
+                "_type": "ImageObject",
+                "thumbnail": {
+                    "_type": "ImageObject",
+                    "contentUrl": "https://www.bing.com/th?id=OVFT.bcF2IAuPRmCNGBlbnYATES&pid=News",
+                    "width": 700,
+                    "height": 393
+                }
+            },
+            "description": "After several days of decline beginning late Friday following fleeting hopes for a ceasefire or targeted truce, cryptocurrency traded lower.",
+            "about": [
+                {
+                    "_type": "Thing",
+                    "readLink": "https://api.cognitive.microsoft.com/api/v7/entities/4d57f5bf-e513-467a-90e6-b18a96600e37",
+                    "name": "Cryptocurrency"
+                }
+            ],
+            "provider": [
+                {
+                    "_type": "Organization",
+                    "name": "Fox Business",
+                    "image": {
+                        "_type": "ImageObject",
+                        "thumbnail": {
+                            "_type": "ImageObject",
+                            "contentUrl": "https://www.bing.com/th?id=ODF.GimbRbdxNxZt1GEL5O0AJg&pid=news"
+                        }
+                    }
+                }
+            ],
+            "datePublished": "2022-03-08T11:23:00.0000000Z"
+        },
+        {
+            "_type": "NewsArticle",
+            "name": "Warren crafts bill targeting cryptocurrency in Russia sanctions",
+            "url": "https://news.yahoo.com/warren-crafts-bill-targeting-cryptocurrency-094901081.html",
+            "image": {
+                "_type": "ImageObject",
+                "thumbnail": {
+                    "_type": "ImageObject",
+                    "contentUrl": "https://www.bing.com/th?id=OVFT.th7dDuwfNS_oxjzJ4Ew6py&pid=News",
+                    "width": 700,
+                    "height": 466
+                }
+            },
+            "description": "As the U.S. searches for new ways to punish Russia for invading Ukraine, Sen. Elizabeth Warren is crafting legislation she hopes will make it harder to use cryptocurrency to evade sanctions.",
+            "provider": [
+                {
+                    "_type": "Organization",
+                    "name": "YAHOO!News",
+                    "image": {
+                        "_type": "ImageObject",
+                        "thumbnail": {
+                            "_type": "ImageObject",
+                            "contentUrl": "https://www.bing.com/th?id=ODF.nYADEgS75l8rdCg9D-p_OQ&pid=news"
+                        }
+                    }
+                }
+            ],
+            "datePublished": "2022-03-08T09:49:00.0000000Z"
+        },
+        {
+            "_type": "NewsArticle",
+            "name": "Cryptocurrency Mining Hardware Market Outlook and Post-COVID Analysis to 2028 - ResearchAndMarkets.com",
+            "url": "https://finance.yahoo.com/news/cryptocurrency-mining-hardware-market-outlook-104200438.html",
+            "description": "The \"Cryptocurrency Mining Hardware Market Outlook, Growth Opportunities, Market Share, Strategies, Trends, Companies, and Post-COVID Analysis, 2021 - 2028\" report has been added to ResearchAndMarkets.",
+            "about": [
+                {
+                    "_type": "Thing",
+                    "readLink": "https://api.cognitive.microsoft.com/api/v7/entities/fa6b7571-3051-7379-9a33-9a559cad903e",
+                    "name": "Mining"
+                },
+                {
+                    "_type": "Thing",
+                    "readLink": "https://api.cognitive.microsoft.com/api/v7/entities/4d57f5bf-e513-467a-90e6-b18a96600e37",
+                    "name": "Cryptocurrency"
+                }
+            ],
+            "provider": [
+                {
+                    "_type": "Organization",
+                    "name": "YAHOO!Finance",
+                    "image": {
+                        "_type": "ImageObject",
+                        "thumbnail": {
+                            "_type": "ImageObject",
+                            "contentUrl": "https://www.bing.com/th?id=ODF.fJDJ4f2BFbmOkQx_rnDw3Q&pid=news"
+                        }
+                    }
+                }
+            ],
+            "datePublished": "2022-03-08T10:42:00.0000000Z"
+        },
+        {
+            "_type": "NewsArticle",
+            "name": "Get the cryptocurrency lowdown on this episode of Getting Rich",
+            "url": "https://sg.news.yahoo.com/cryptocurrency-lowdown-episode-getting-rich-220000003.html",
+            "description": "If you’re confused by cryptocurrency, you’re not alone! The post Get the cryptocurrency lowdown on this episode of Getting Rich appeared first on In The Know.",
+            "about": [
+                {
+                    "_type": "Thing",
+                    "readLink": "https://api.cognitive.microsoft.com/api/v7/entities/1cfe55dc-69d1-b7b5-b1bd-5775cd867195",
+                    "name": "Rich"
+                }
+            ],
+            "provider": [
+                {
+                    "_type": "Organization",
+                    "name": "Yahoo News Singapore",
+                    "image": {
+                        "_type": "ImageObject",
+                        "thumbnail": {
+                            "_type": "ImageObject",
+                            "contentUrl": "https://www.bing.com/th?id=ODF.kkwLo8iJPFcWP1fA_VstCQ&pid=news"
+                        }
+                    }
+                }
+            ],
+            "datePublished": "2022-03-07T22:00:00.0000000Z"
+        },
+        {
+            "_type": "NewsArticle",
+            "name": "Alchemy Pay: Bridging Fiat Money and Cryptocurrency Is Bold, but Questionable",
+            "url": "https://www.msn.com/en-us/money/markets/alchemy-pay-bridging-fiat-money-and-cryptocurrency-is-bold-but-questionable/ar-AAUMe0N",
+            "description": "Alchemy Pay wants to build a hybrid fiat money and cryptocurrency market ecosystem. Life has taught us why it may be impossible.More From InvestorPlace Get in Now on Tiny $3 ‘Forever Battery’ Stock It doesn’t matter if you have $500 in savings or $5 million.",
+            "about": [
+                {
+                    "_type": "Thing",
+                    "readLink": "https://api.cognitive.microsoft.com/api/v7/entities/9886a0fe-6cf6-c959-7550-bb8cc442f9c5",
+                    "name": "Uriella"
+                },
+                {
+                    "_type": "Thing",
+                    "readLink": "https://api.cognitive.microsoft.com/api/v7/entities/39228bac-a2d9-c031-7aae-ffc989e38f1e",
+                    "name": "Alchemy"
+                },
+                {
+                    "_type": "Thing",
+                    "readLink": "https://api.cognitive.microsoft.com/api/v7/entities/854583c0-25cd-edb2-b475-7addf30510f9",
+                    "name": "Pay"
+                }
+            ],
+            "mentions": [
+                {
+                    "_type": "Thing",
+                    "name": "Uriella"
+                },
+                {
+                    "_type": "Thing",
+                    "name": "Alchemy"
+                },
+                {
+                    "_type": "Thing",
+                    "name": "Pay"
+                }
+            ],
+            "provider": [
+                {
+                    "_type": "Organization",
+                    "name": "MSN",
+                    "image": {
+                        "_type": "ImageObject",
+                        "thumbnail": {
+                            "_type": "ImageObject",
+                            "contentUrl": "https://www.bing.com/th?id=ODF.FPGiCjSpNWuR3YuGCSVHjA&pid=news"
+                        }
+                    }
+                }
+            ],
+            "datePublished": "2022-03-08T12:21:00.0000000Z"
+        },
+        {
+            "_type": "NewsArticle",
+            "name": "President Biden to issue executive order on cryptocurrency",
+            "url": "https://economictimes.indiatimes.com/news/international/business/president-biden-to-issue-executive-order-on-cryptocurrency/articleshow/90069115.cms",
+            "image": {
+                "_type": "ImageObject",
+                "thumbnail": {
+                    "_type": "ImageObject",
+                    "contentUrl": "https://www.bing.com/th?id=OVFT.wBNor0Rp76zX8DfQHCKlQS&pid=News",
+                    "width": 700,
+                    "height": 379
+                }
+            },
+            "description": "People familiar with the process said the executive order on cryptocurrency was expected to be issued this week and it had been in the works long before the war. Both people spoke on condition of anonymity to preview the order.",
+            "about": [
+                {
+                    "_type": "Thing",
+                    "readLink": "https://api.cognitive.microsoft.com/api/v7/entities/cad484f9-be75-7a78-12dd-16233f823cd7",
+                    "name": "Joe Biden"
+                },
+                {
+                    "_type": "Thing",
+                    "readLink": "https://api.cognitive.microsoft.com/api/v7/entities/c8dfebad-4209-b5c5-806d-7d34444dc344",
+                    "name": "The Economic Times"
+                },
+                {
+                    "_type": "Thing",
+                    "readLink": "https://api.cognitive.microsoft.com/api/v7/entities/f481bd0f-284f-f565-4b85-ada2653ce689",
+                    "name": "President"
+                }
+            ],
+            "provider": [
+                {
+                    "_type": "Organization",
+                    "name": "India Times",
+                    "image": {
+                        "_type": "ImageObject",
+                        "thumbnail": {
+                            "_type": "ImageObject",
+                            "contentUrl": "https://www.bing.com/th?id=ODF.ajXT0U6_LaErmc8AT6Kh3Q&pid=news"
+                        }
+                    }
+                }
+            ],
+            "datePublished": "2022-03-08T05:28:00.0000000Z"
+        }
+    ]
+}

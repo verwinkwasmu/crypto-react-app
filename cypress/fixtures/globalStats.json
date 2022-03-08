@@ -1,0 +1,10 @@
+{
+  "status": "success",
+  "data": {
+      "totalCoins": 13397,
+      "totalMarkets": 25779,
+      "totalExchanges": 182,
+      "totalMarketCap": "1821507903383",
+      "total24hVolume": "79770931372"
+  }
+}
