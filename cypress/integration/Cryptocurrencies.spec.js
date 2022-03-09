@@ -5,7 +5,9 @@ describe('Cryptocurrency page', () => {
         cy.visit('/cryptocurrencies')
         cy.intercept("GET", "https://coinranking1.p.rapidapi.com/coins?limit=100", {
             fixture: "cryptos.json"
-        })
+        }).as('getCryptos')
+
+        cy.wait('@getCryptos')
     })
 
     it('Test Display page title', () => {
@@ -40,10 +42,14 @@ describe('CryptoDetails Page', () => {
         cy.visit("/crypto/Qwsogvtv82FCd")
         cy.intercept("GET", "https://coinranking1.p.rapidapi.com/coin/Qwsogvtv82FCd", {
             fixture: "cryptoDetails_BTC.json"
-        })
+        }).as('getCryptoDetails')
+
         cy.intercept("GET", "https://coinranking1.p.rapidapi.com/coin/Qwsogvtv82FCd/history?timeperiod=7d", {
             fixture: "coinHistory_BTC.json"
-        })
+        }).as('getCryptoPriceHistory')
+
+        cy.wait(['@getCryptoDetails', '@getCryptoPriceHistory'])
+
     })
 
 
