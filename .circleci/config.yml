@@ -1,15 +1,12 @@
 version: 2.1
 orbs:
   cypress: cypress-io/cypress@1
-executors:
-  with-chrome:
-    docker:
-      - image: 'cypress/browsers:node14.16.0-chrome90-ff88'
 workflows:
   build:
     jobs:
+      - cypress/install:
+          build: npm run build
       - cypress/run:
-          start: npm start
-          wait-on: 'http://localhost:3000'
-          executor: with-chrome
-          browser: chrome
+          requires:
+            - cypress/install
+
