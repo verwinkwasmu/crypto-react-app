@@ -2,10 +2,11 @@
 
 describe('Cryptocurrency page', () => {
     before(() => {
-        cy.visit('/cryptocurrencies')
+        // IMPT must make sure that intercepts come before the 'visit' if not the first request will not be captured thus failing it
         cy.intercept("GET", "https://coinranking1.p.rapidapi.com/coins?limit=100", {
             fixture: "cryptos.json"
         }).as('getCryptos')
+        cy.visit('/cryptocurrencies')
 
         cy.wait('@getCryptos').then((interception) => {
             assert.isNotNull(interception.response.body, '@getCryptos API call has data')
@@ -41,8 +42,7 @@ describe('Cryptocurrency page', () => {
 describe('CryptoDetails Page', () => {
 
     before(() => {
-        cy.visit("/crypto/Qwsogvtv82FCd")
-
+        // IMPT must make sure that intercepts come before the 'visit' if not the first request will not be captured thus failing it
         cy.intercept("GET", "https://coinranking1.p.rapidapi.com/coin/Qwsogvtv82FCd", {
             fixture: "cryptoDetails_BTC.json"
         }).as('getCryptoDetails')
@@ -50,6 +50,8 @@ describe('CryptoDetails Page', () => {
         cy.intercept("GET", "https://coinranking1.p.rapidapi.com/coin/Qwsogvtv82FCd/history?timeperiod=7d", {
             fixture: "coinHistory_BTC.json"
         }).as('getCryptoPriceHistory')
+
+        cy.visit("/crypto/Qwsogvtv82FCd")
 
         cy.wait('@getCryptoDetails').then((interception) => {
             assert.isNotNull(interception.response.body, '@getCryptoDetails API call has data')
