@@ -7,7 +7,9 @@ describe('Cryptocurrency page', () => {
             fixture: "cryptos.json"
         }).as('getCryptos')
 
-        cy.wait('@getCryptos')
+        cy.wait('@getCryptos').then((interception) => {
+            assert.isNotNull(interception.response.body, '@getCryptos API call has data')
+        })
     })
 
     it('Test Display page title', () => {
@@ -40,6 +42,7 @@ describe('CryptoDetails Page', () => {
 
     before(() => {
         cy.visit("/crypto/Qwsogvtv82FCd")
+
         cy.intercept("GET", "https://coinranking1.p.rapidapi.com/coin/Qwsogvtv82FCd", {
             fixture: "cryptoDetails_BTC.json"
         }).as('getCryptoDetails')
@@ -48,8 +51,13 @@ describe('CryptoDetails Page', () => {
             fixture: "coinHistory_BTC.json"
         }).as('getCryptoPriceHistory')
 
-        cy.wait(['@getCryptoDetails', '@getCryptoPriceHistory'])
+        cy.wait('@getCryptoDetails').then((interception) => {
+            assert.isNotNull(interception.response.body, '@getCryptoDetails API call has data')
+        })
 
+        cy.wait('@getCryptoPriceHistory').then((interception) => {
+            assert.isNotNull(interception.response.body, '@getCryptoPriceHistory API call has data')
+        })
     })
 
 
