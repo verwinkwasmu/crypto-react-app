@@ -5,7 +5,6 @@ on: [push]
 jobs:
   cypress-run:
     runs-on: ubuntu-latest
-    container: cypress/browsers:chrome69	
     steps:
       - name: Checkout
         uses: actions/checkout@v2
@@ -14,7 +13,6 @@ jobs:
       - name: Cypress run
         uses: cypress-io/github-action@v2
         with:
-          browser: chrome
           build: npm run build
           start: npm start
           wait-on: 'http://localhost:3000'
