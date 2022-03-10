@@ -13,9 +13,5 @@ jobs:
       # Install NPM dependencies, cache them correctly
       # and run all Cypress tests
       - name: Cypress run
-        uses: cypress-io/github-action@v2
         with:
           start: npm test
-          wait-on: 'http://localhost:3000'
-          browser: chrome
-          headless: true
