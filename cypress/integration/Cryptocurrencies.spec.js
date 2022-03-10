@@ -25,18 +25,6 @@ describe('Cryptocurrency page', () => {
         cy.get('.card').should('contain', 'Binance').and('contain', 'Price (USD)').and('contain', 'Market Cap').and('contain', 'Daily Change').should('be.visible')
     })
 
-    it('Test if clicking coin card leads to a the coinDetails page', () => {
-        cy.get("input[placeholder='Search for Cryptocurrencies']").clear().type('Bitcoin')
-        cy.get('a').contains('Bitcoin').click()
-        cy.location('pathname').should('eq', '/crypto/Qwsogvtv82FCd')
-        cy.wait(3000)
-        cy.go('back')
-    })
-
-    it('Test Display Footer', () => {
-        cy.get('.footer').should('contain', 'CryptoSphere').and('contain', 'Home').and('contain', 'Cryptocurrencies').and('contain', 'News').should('be.visible')
-    })
-
 })
 
 describe('CryptoDetails Page', () => {
