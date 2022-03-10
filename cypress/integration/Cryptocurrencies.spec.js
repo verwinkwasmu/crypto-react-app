@@ -29,7 +29,7 @@ describe('Cryptocurrency page', () => {
 
 describe('CryptoDetails Page', () => {
 
-    before(() => {
+    beforeEach(() => {
         // IMPT must make sure that intercepts come before the 'visit' if not the first request will not be captured thus failing it
         cy.intercept("GET", "https://coinranking1.p.rapidapi.com/coin/Qwsogvtv82FCd", {
             fixture: "cryptoDetails_BTC.json"
