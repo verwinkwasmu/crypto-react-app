@@ -13,5 +13,4 @@ jobs:
       # Install NPM dependencies, cache them correctly
       # and run all Cypress tests
       - name: Cypress run
-        with:
-          start: npm test
+        run: npm test
