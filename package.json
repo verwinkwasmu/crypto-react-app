@@ -53,6 +53,7 @@
     ]
   },
   "devDependencies": {
+    "netlify-cli": "^9.13.0",
     "start-server-and-test": "^1.14.0"
   }
 }
